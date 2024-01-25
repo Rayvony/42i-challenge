@@ -15,12 +15,12 @@ and open the localhost link
 # Page Functionality
 
 ## findPairWithSum Function:
-1. On the first input you need to add your own array of ***integers*** separated by a comma without the brackets. for example: "1,3,2,10"
+1. On the first input you need to add your own array of ***integers*** separated by a comma without the brackets. for example: "1,-3,2,10"
 1. On the second input you must add your targetSum (it must be an integer).
 1. Press the button and the result will be displayed.
 
 ## minChange Function:
-1. On the input you need to add your own array of ***positive integers*** separated by a comma without the brackets. for example: "1,3,2,10"
+1. On the input you need to add your own array of ***positive integers*** separated by a comma without the brackets. for example: "14,1,2,1"
 1. Press the button and the result will be displayed.
 
 # Testing
