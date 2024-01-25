@@ -25,6 +25,7 @@ export const Footer = () => {
           transition: "all 100ms",
           "&:hover": {
             filter: "brightness(1.2)",
+            transform: "scale(2.5)",
           },
         }}
       >

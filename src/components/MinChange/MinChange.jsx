@@ -13,7 +13,7 @@ export const MinChange = () => {
       const result = minChange(coins);
       setMinChangeResult(`Minimum change: ${result}`);
     } catch (error) {
-      setMinChangeResult("Invalid input");
+      setMinChangeResult(error.message || "Invalid input");
     }
   };
   return (

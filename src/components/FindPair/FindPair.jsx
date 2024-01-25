@@ -15,7 +15,7 @@ export const FindPair = () => {
       const result = findPairWithSum(numbers, targetInputNumber);
       setFindPairResult(`Pair with sum: ${JSON.stringify(result)}`);
     } catch (error) {
-      setFindPairResult("Invalid input");
+      setFindPairResult(error.message || "Invalid input");
     }
   };
   return (
