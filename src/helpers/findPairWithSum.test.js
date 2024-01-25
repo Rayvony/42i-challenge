@@ -18,4 +18,8 @@ describe("findPairWithSum", () => {
   test("throws an error if numbers is not an array of numbers", () => {
     expect(() => findPairWithSum("not an array", 10)).toThrow("Numbers must be an array of numbers");
   });
+
+  test("throws an error if there are duplicate numbers in the array", () => {
+    expect(() => findPairWithSum([1, 2, 3, 3, 4], 7)).toThrow("Duplicate number found in the array");
+  });
 });

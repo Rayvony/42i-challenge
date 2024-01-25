@@ -10,6 +10,10 @@ export default function findPairWithSum(numbers, targetSum) {
   const numSet = new Set();
 
   for (const num of numbers) {
+    if (numSet.has(num)) {
+      throw new Error("Duplicate number found in the array");
+    }
+
     const complement = targetSum - num;
 
     if (numSet.has(complement)) {
