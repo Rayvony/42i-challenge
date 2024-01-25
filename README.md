@@ -28,7 +28,11 @@ if you want to check out the tests for each function open the console on the pro
 ```
 npm test
 ```
+# Challenge Propmts
+- [findPairWithSum](https://42i.notion.site/Two-Number-Sum-83fced39cc3b4bb698c365fffa7b9444)
+- [minChange](https://42i.notion.site/Non-Constructible-Change-e423c9af05c64621a40bf9dcefee3930)
 
+# Preview
 ![image](https://github.com/Rayvony/42i-challenge/assets/91701599/6eae1e71-8648-4f76-96e2-2fd0654c28bb)
 
 
