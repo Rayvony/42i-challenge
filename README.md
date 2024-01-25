@@ -1,8 +1,34 @@
-# React + Vite
+# 42i Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Setup
 
-Currently, two official plugins are available:
+Clone the repo, then open it on the console and run
+```
+npm i
+```
+After the installation run 
+```
+npm run dev
+```
+and open the localhost link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Page Functionality
+
+## findPairWithSum Function:
+1. On the first input you need to add your own array of ***integers*** separated by a comma without the brackets. for example: "1,3,2,10"
+1. On the second input you must add your targetSum (it must be an integer).
+1. Press the button and the result will be displayed.
+
+## minChange Function:
+1. On the input you need to add your own array of ***positive integers*** separated by a comma without the brackets. for example: "1,3,2,10"
+1. Press the button and the result will be displayed.
+
+# Testing
+if you want to check out the tests for each function open the console on the project's root directory and run 
+```
+npm test
+```
+
+![image](https://github.com/Rayvony/42i-challenge/assets/91701599/6eae1e71-8648-4f76-96e2-2fd0654c28bb)
+
+
