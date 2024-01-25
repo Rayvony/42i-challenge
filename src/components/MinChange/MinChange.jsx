@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextField, Button, Typography } from "@mui/material";
 import minChange from "../../helpers/minChange";
+import styles from "./MinChange.module.css";
 
 export const MinChange = () => {
   const [coinsInput, setCoinsInput] = useState("");
@@ -16,15 +17,19 @@ export const MinChange = () => {
     }
   };
   return (
-    <div>
-      <Typography variant='h6' sx={{ textAlign: "center" }}>
+    <>
+      <Typography variant='h6' sx={{ textAlign: "center", mt: "5%", mb: "1%" }}>
         Min Change
       </Typography>
-      <TextField label='Coins (Array)' variant='outlined' value={coinsInput} onChange={(e) => setCoinsInput(e.target.value)} />
-      <Button variant='contained' color='primary' onClick={handleMinChange}>
-        Run minChange
-      </Button>
-      <div>{minChangeResult}</div>
-    </div>
+      <div className={styles.minChange}>
+        <TextField label='Coins (Array)' color='purple' variant='outlined' value={coinsInput} onChange={(e) => setCoinsInput(e.target.value)} />
+        <Button variant='contained' color='purple' onClick={handleMinChange}>
+          Run minChange
+        </Button>
+      </div>
+      <Typography className={styles.results} variant='body1'>
+        {minChangeResult}
+      </Typography>
+    </>
   );
 };

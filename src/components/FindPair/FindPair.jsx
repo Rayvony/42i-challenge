@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextField, Button, Typography } from "@mui/material";
 import findPairWithSum from "../../helpers/findPairWithSum";
+import styles from "./FindPair.module.css";
 
 export const FindPair = () => {
   const [numbersInput, setNumbersInput] = useState("");
@@ -18,16 +19,20 @@ export const FindPair = () => {
     }
   };
   return (
-    <div>
-      <Typography variant='h6' sx={{ textAlign: "center" }}>
+    <>
+      <Typography variant='h6' sx={{ textAlign: "center", mt: "5%", mb: "1%" }}>
         Find Pair
       </Typography>
-      <TextField label='Numbers (Array)' variant='outlined' value={numbersInput} onChange={(e) => setNumbersInput(e.target.value)} />
-      <TextField label='Target Number' variant='outlined' value={targetInput} onChange={(e) => setTargetInput(e.target.value)} />
-      <Button variant='contained' color='primary' onClick={handleFindPair}>
-        Run findPair
-      </Button>
-      <div>{findPairResult}</div>
-    </div>
+      <div className={styles.findPair}>
+        <TextField label='Numbers (Array)' color='purple' variant='outlined' value={numbersInput} onChange={(e) => setNumbersInput(e.target.value)} />
+        <TextField label='Target Number' color='purple' variant='outlined' value={targetInput} onChange={(e) => setTargetInput(e.target.value)} />
+        <Button color='purple' variant='contained' onClick={handleFindPair}>
+          Run findPair
+        </Button>
+      </div>
+      <Typography className={styles.results} variant='body1'>
+        {findPairResult}
+      </Typography>
+    </>
   );
 };

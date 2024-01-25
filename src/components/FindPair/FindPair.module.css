@@ -1,0 +1,14 @@
+.findPair {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    color: white !important;
+}
+
+.results{
+    margin-top: 5px;
+    text-align: center;
+}

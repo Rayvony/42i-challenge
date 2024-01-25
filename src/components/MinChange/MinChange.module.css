@@ -1,0 +1,10 @@
+.minChange {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.results{
+    margin-top: 5px;
+    text-align: center;
+}
