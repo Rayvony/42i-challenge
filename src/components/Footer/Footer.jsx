@@ -1,5 +1,5 @@
 import React from "react";
-import { IconButton, Link, Typography } from "@mui/material";
+import { IconButton, Link } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const Footer = () => {
